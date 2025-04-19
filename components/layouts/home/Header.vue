@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PhList, PhX } from '@phosphor-icons/vue'
+import { RiMenuLine, RiCloseLine } from '@remixicon/vue'
 import {watch} from "vue";
 import gsap from "gsap";
 
@@ -75,7 +75,7 @@ watch(isOpen, (value) => {
         <!-- Mobile Menu Toggle -->
         <div class="lg:hidden z-[10001] relative">
           <button @click="isOpen = !isOpen" class="hover:cursor-pointer">
-            <component :is="isOpen ? PhX : PhList" size="28" />
+            <component :is="isOpen ? RiCloseLine : RiMenuLine" size="28" />
           </button>
         </div>
       </div>
