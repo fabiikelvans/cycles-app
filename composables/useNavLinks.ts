@@ -1,7 +1,7 @@
 // Navigation Links
 
 import type {NavLink} from "~/types";
-import {RiVisaLine, RiHome4Fill, RiSuitcaseFill, RiFileListFill} from "@remixicon/vue";
+import { RiHome4Fill, RiWallet2Fill, RiSuitcaseFill, RiFileListFill} from "@remixicon/vue";
 
 export const useNavLinks = (): NavLink[] => {
   return [
@@ -13,7 +13,7 @@ export const useNavLinks = (): NavLink[] => {
     {
       name: "Finance",
       href: "/dashboard/finance",
-      icon: RiVisaLine
+      icon: RiWallet2Fill,
     },
     {
       name: "Human Resource",
