@@ -8,6 +8,28 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       tailwindcss(),
+      {
+        name: 'vite-plugin-empty-phosphor-icons',
+        resolveId(id) {
+          if (id.startsWith('')) {
+            return id
+          }
+        },
+        load(id) {
+          if (id.startsWith('')) {
+            // Return a dummy Vue component so it doesn't crash SSR
+            return `
+              import { defineComponent, h } from 'vue';
+              export default defineComponent({
+                name: 'DummyPhosphorIcon',
+                render() {
+                  return h('span');
+                }
+              });
+            `
+          }
+        },
+      },
     ],
     resolve: {
       alias: {
