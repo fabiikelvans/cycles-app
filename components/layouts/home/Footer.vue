@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {PhGithubLogo, PhLinkedinLogo, PhXLogo} from "@phosphor-icons/vue";
+import {RiTwitterXLine, RiGithubLine, RiLinkedinLine} from "@remixicon/vue";
 </script>
 
 <template>
@@ -16,9 +16,9 @@ import {PhGithubLogo, PhLinkedinLogo, PhXLogo} from "@phosphor-icons/vue";
       </div>
 
       <div class="flex items-center space-x-4">
-        <PhXLogo size="24" weight="duotone"  class="hover:cursor-pointer"/>
-        <PhGithubLogo size="24" weight="duotone" class="hover:cursor-pointer"/>
-        <PhLinkedinLogo size="24" weight="duotone" class="hover:cursor-pointer"/>
+        <RiTwitterXLine size="24" class="hover:cursor-pointer"/>
+        <RiGithubLine size="24" class="hover:cursor-pointer"/>
+        <RiLinkedinLine size="24" class="hover:cursor-pointer"/>
       </div>
 
     </div>
