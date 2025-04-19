@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {PhArrowUpRight} from "@phosphor-icons/vue";
+import {RiArrowRightLine} from "@remixicon/vue";
 
 const series = [
   {
@@ -63,7 +63,7 @@ const chartOptions = {
   <div class="flex items-center justify-between">
     <h2 class="text-lg font-light">Progress</h2>
     <div class="p-3 flex items-center justify-center rounded-full bg-white">
-      <PhArrowUpRight size="18" />
+      <RiArrowRightLine size="18" />
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PhCaretDown} from "@phosphor-icons/vue";
+import { RiArrowDownSLine } from "@remixicon/vue";
 // Define months
 const months = [
   'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -71,12 +71,12 @@ const chartOptions = ref({
     <div class="hidden md:flex items-center space-x-2">
       <Button variant="outline" size="lg" class="rounded-full">
         <span> This Year </span>
-        <PhCaretDown/>
+        <RiArrowDownSLine/>
       </Button>
 
       <Button variant="outline" size="lg" class="rounded-full">
         <span> Summary </span>
-        <PhCaretDown/>
+        <RiArrowDownSLine/>
       </Button>
     </div>
   </div>

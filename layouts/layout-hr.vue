@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import { useRoute } from 'vue-router'
 import type { NavLink } from '~/types'
 import IconWrapper from '~/components/layouts/analytics/IconWrapper.vue'
-import {PhList, PhX, PhGearSix, PhBellRinging, PhUser} from '@phosphor-icons/vue'
+import {RiMenuFill, RiCloseFill, RiSettings4Fill, RiNotification3Fill, RiUserFill} from '@remixicon/vue'
 
 const navLinks: NavLink[] = useNavLinks()
 const route = useRoute()
@@ -61,17 +61,17 @@ watch(isOpen, (value) => {
            </div>
 
            <div class="hidden lg:flex items-center justify-center space-x-2 py-2 px-4 transition-colors duration-200 rounded-full  bg-white/80 backdrop-blur-md  hover:cursor-pointer hover:bg-white/40 hover:text-gray-900">
-             <PhGearSix size="20" weight="light" />
+             <RiSettings4Fill size="20" weight="light" />
              <p class="text-base font-light">Settings</p>
            </div>
 
 
            <div class="hidden lg:flex items-center space-x-2">
              <div class="flex items-center justify-center p-3 transition-colors duration-200 rounded-full  bg-white/80 backdrop-blur-md hover:cursor-pointer hover:bg-white/40 hover:text-gray-900">
-               <PhBellRinging size="20" weight="light" />
+               <RiNotification3Fill size="20" weight="light" />
              </div>
              <div class="flex items-center justify-center p-3 transition-colors duration-200 rounded-full  bg-white/80 backdrop-blur-md hover:cursor-pointer hover:bg-white/40 hover:text-gray-900">
-               <PhUser size="20" weight="light" />
+               <RiUserFill size="20" weight="light" />
              </div>
            </div>
          </div>
@@ -80,7 +80,7 @@ watch(isOpen, (value) => {
          <div class="lg:hidden flex items-center space-x-2 z-[10001] relative">
            <button @click="isOpen = !isOpen">
              <IconWrapper>
-               <component :is="isOpen ? PhX : PhList" size="28" />
+               <component :is="isOpen ? RiCloseFill : RiMenuFill" size="28" />
              </IconWrapper>
            </button>
          </div>

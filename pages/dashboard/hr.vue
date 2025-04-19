@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 
-import {PhBriefcase, PhUserPlus, PhUsers} from "@phosphor-icons/vue";
+import {RiSuitcaseFill, RiUserAddFill, RiTeamFill} from "@remixicon/vue";
 import HrCard1 from "~/components/pages/hr/HrCard1.vue";
 import HrCard2 from "~/components/pages/hr/HrCard2.vue";
 import HrCard3 from "~/components/pages/hr/HrCard3.vue";
@@ -67,7 +67,7 @@ useHead({
       <div>
         <div class="flex items-end space-x-1 space-y-1">
           <div class="bg-foreground/20 p-1 h-fit w-fit rounded-md">
-            <PhUsers size="16" />
+            <RiTeamFill size="16" />
           </div>
           <h1 class="text-5xl md:text-6xl font-extralight">78</h1>
         </div>
@@ -77,7 +77,7 @@ useHead({
       <div>
         <div class="flex items-end space-x-1 space-y-1">
           <div class="bg-foreground/20 p-1 h-fit w-fit rounded-md">
-            <PhUserPlus size="16" />
+            <RiUserAddFill size="16" />
           </div>
           <h1 class="text-5xl md:text-6xl font-extralight"> 56 </h1>
         </div>
@@ -87,7 +87,7 @@ useHead({
       <div>
         <div class="flex items-end space-x-1 space-y-1">
           <div class="bg-foreground/20 p-1 h-fit w-fit rounded-md">
-            <PhBriefcase size="16" />
+            <RiSuitcaseFill size="16" />
           </div>
           <h1 class="text-5xl md:text-6xl font-extralight"> 124 </h1>
         </div>

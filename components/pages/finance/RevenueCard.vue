@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {PhArrowUpRight} from "@phosphor-icons/vue";
+import {RiArrowRightLine} from "@remixicon/vue";
 import {Badge} from "~/components/ui/badge";
 </script>
 
@@ -12,7 +12,7 @@ import {Badge} from "~/components/ui/badge";
    <h2 class="text-2xl font-light tracking-tighter">Overall Revenue</h2>
 
     <div class="flex items-center justify-center bg-white/20 backdrop-blur-xs text-white  p-2 rounded-full">
-      <PhArrowUpRight size="20" />
+      <RiArrowRightLine size="20" />
     </div>
   </div>
 

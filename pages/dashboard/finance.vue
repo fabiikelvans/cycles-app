@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {PhDownloadSimple, PhGearSix} from "@phosphor-icons/vue";
+import {RiDownloadLine, RiSettings4Fill} from "@remixicon/vue";
 import DateRange from "~/components/ui/date/DateRange.vue";
 import RevenueCard from "~/components/pages/finance/RevenueCard.vue";
 import InsightCard from "~/components/pages/finance/InsightCard.vue";
@@ -45,11 +45,11 @@ const tabs = [
     <div class="hidden md:flex items-center space-x-3">
       <Button size="lg" variant="secondary" class="bg-white shadow-sm hover:cursor-pointer">
         <span> Export Data </span>
-        <PhDownloadSimple/>
+        <RiDownloadLine/>
       </Button>
 
       <Button size="icon" variant="secondary" class="bg-white shadow-sm hover:cursor-pointer rounded-full h-11 w-11">
-        <PhGearSix size="24" />
+        <RiSettings4Fill size="24" />
       </Button>
     </div>
   </div>

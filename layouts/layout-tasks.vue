@@ -7,7 +7,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from '@/components/ui/sidebar'
-import {PhBell, PhQuestion} from "@phosphor-icons/vue";
+import {RiNotification3Fill, RiQuestionFill} from "@remixicon/vue";
 
 
 </script>
@@ -36,11 +36,11 @@ import {PhBell, PhQuestion} from "@phosphor-icons/vue";
 
           <div class="flex items-center space-x-2">
             <div class="flex items-center justify-center p-2 rounded-full bg-white">
-              <PhQuestion size="20"/>
+              <RiQuestionFill size="20"/>
             </div>
 
             <div class="flex items-center justify-center p-2 rounded-full bg-white">
-              <PhBell size="20"/>
+              <RiNotification3Fill size="20"/>
             </div>
           </div>
         </div>

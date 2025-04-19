@@ -10,9 +10,6 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  phosphor: {
-    expose: true,
-  },
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -33,7 +30,6 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     'shadcn-nuxt',
-    "nuxt-phosphor-icons",
     "@nuxt/icon",
   ],
   plugins: [{ src: "~/plugins/apexcharts.ts", mode: "client" }],

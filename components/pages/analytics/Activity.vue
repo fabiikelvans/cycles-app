@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import {Card} from "~/components/ui/card";
-import {PhArrowUpRight, PhGlobe} from "@phosphor-icons/vue";
+import {RiArrowRightLine, RiGlobalLine} from "@remixicon/vue";
 import ActivityGraph from "~/components/pages/analytics/ActivityGraph.vue";
 </script>
 
@@ -10,12 +10,12 @@ import ActivityGraph from "~/components/pages/analytics/ActivityGraph.vue";
   <div>
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <PhGlobe size="20" />
+        <RiGlobalLine size="20" />
         <h4> Activity by time </h4>
       </div>
 
       <div class="flex items-center justify-center p-3 bg-neutral-800 rounded-full">
-        <PhArrowUpRight />
+        <RiArrowRightLine />
       </div>
     </div>
 

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 
-import { PhLaptop, PhUsers, PhBriefcase, PhTarget, PhShield } from '@phosphor-icons/vue'
+import { RiComputerLine, RiTeamFill, RiSuitcaseFill, RiFlagLine, RiShieldCheckLine } from '@remixicon/vue'
 
 const tasks = ref([
-  { id: 1, label: 'Interview', date: 'May 12, 10:30', icon: PhLaptop, done: true },
-  { id: 2, label: 'Team meeting', date: 'May 13, 14:00', icon: PhUsers, done: true },
-  { id: 3, label: 'Project Update', date: 'May 14, 09:00', icon: PhBriefcase, done: false },
-  { id: 4, label: 'Discuss Q3 Goals', date: 'May 15, 11:15', icon: PhTarget, done: false },
-  { id: 5, label: 'HR Policy Review', date: 'May 16, 13:00', icon: PhShield, done: false },
+  { id: 1, label: 'Interview', date: 'May 12, 10:30', icon: RiComputerLine, done: true },
+  { id: 2, label: 'Team meeting', date: 'May 13, 14:00', icon: RiTeamFill, done: true },
+  { id: 3, label: 'Project Update', date: 'May 14, 09:00', icon: RiSuitcaseFill, done: false },
+  { id: 4, label: 'Discuss Q3 Goals', date: 'May 15, 11:15', icon: RiFlagLine, done: false },
+  { id: 5, label: 'HR Policy Review', date: 'May 16, 13:00', icon: RiShieldCheckLine, done: false },
 ])
 
 const toggleDone = (taskId: number) => {

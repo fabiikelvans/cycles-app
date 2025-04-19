@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {PhDotsThreeOutlineVertical, PhLink, PhNotification} from "@phosphor-icons/vue";
+import {RiMore2Fill, RiLink, RiNotification3Fill} from "@remixicon/vue";
 
 const props = defineProps<{
   tag_1: string;
@@ -44,7 +44,7 @@ const users = [
       </div>
 
       <div class="flex items-center justify-center rounded-sm border border-black/60 h-6 w-6 mix-blend-overlay">
-        <PhDotsThreeOutlineVertical size="12" weight="fill" class="text-black"/>
+        <RiMore2Fill size="12" weight="fill" class="text-black"/>
       </div>
     </div>
 
@@ -66,12 +66,12 @@ const users = [
 
       <div class="flex items-center space-x-2">
         <Badge variant="outline" size="lg" :class="`${mainColor} border border-white`">
-          <PhNotification size="20"/>
+          <RiNotification3Fill size="20"/>
           <span>{{ notification }}</span>
         </Badge>
 
         <Badge variant="outline" :class="`${mainColor} border border-white`">
-          <PhLink />
+          <RiLink />
           <span>{{ links }}</span>
         </Badge>
       </div>

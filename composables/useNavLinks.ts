@@ -1,29 +1,29 @@
 // Navigation Links
 
 import type {NavLink} from "~/types";
-import {PhCreditCard, PhHouseSimple, PhBriefcase, PhFiles} from "@phosphor-icons/vue";
+import {RiVisaLine, RiHome4Fill, RiSuitcaseFill, RiFileListFill} from "@remixicon/vue";
 
 export const useNavLinks = (): NavLink[] => {
   return [
     {
       name: "Dashboard",
       href: "/dashboard/analytics",
-      icon: PhHouseSimple
+      icon: RiHome4Fill
     },
     {
       name: "Finance",
       href: "/dashboard/finance",
-      icon: PhCreditCard
+      icon: RiVisaLine
     },
     {
       name: "Human Resource",
       href: "/dashboard/hr",
-      icon: PhFiles
+      icon: RiFileListFill
     },
     {
       name: "Tasks",
       href: "/dashboard/tasks",
-      icon: PhBriefcase
+      icon: RiSuitcaseFill
     },
 
   ]

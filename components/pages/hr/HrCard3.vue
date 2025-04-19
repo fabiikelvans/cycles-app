@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {PhAlarm, PhArrowUpRight, PhClockClockwise, PhPause, PhPlay} from "@phosphor-icons/vue";
+import {RiAlarmFill, RiArrowUpRightLine, RiRefreshLine, RiPauseFill, RiPlayFill} from "@remixicon/vue";
 
 const totalTime = 5 * 60 // Full circle represents 5 minutes
 const timeLeft = ref(2 * 60 + 32) // Starts at 2:32
@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
   <div class="flex items-center justify-between">
     <h2 class="text-lg font-light"> Time tracker </h2>
     <div class="p-3 flex items-center justify-center rounded-full bg-white">
-      <PhArrowUpRight size="18" />
+      <RiArrowUpRightLine size="18" />
     </div>
   </div>
 
@@ -112,19 +112,19 @@ onBeforeUnmount(() => {
          class="p-3 bg-white rounded-full flex items-center justify-center"
          @click="toggleTimer"
        >
-         <component :is="isRunning ? PhPause : PhPlay" class="w-4 h-4" />
+         <component :is="isRunning ? RiPauseFill : RiPlayFill" class="w-4 h-4" />
        </button>
 
        <button
          class="p-3 bg-white rounded-full flex items-center justify-center"
          @click="resetTimer"
        >
-         <PhClockClockwise/>
+         <RiRefreshLine/>
        </button>
      </div>
 
      <div class="p-3 bg-foreground text-white rounded-full flex items-center justify-center">
-       <PhAlarm />
+       <RiAlarmFill />
      </div>
    </div>
  </div>

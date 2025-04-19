@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import {Separator} from "~/components/ui/separator";
-import {PhCaretDown, PhFunnel, PhPlus} from "@phosphor-icons/vue";
+import {RiArrowDownSLine, RiFilterLine, RiAddLine} from "@remixicon/vue";
 
 
 const users = [
@@ -48,7 +48,7 @@ const users = [
         <p>-</p>
         <Button variant="ghost">
           <span>Daily Tasks</span>
-          <PhCaretDown/>
+          <RiArrowDownSLine/>
         </Button>
       </div>
     </div>
@@ -70,12 +70,12 @@ const users = [
 
       <div class="flex items-center space-x-2">
         <Button variant="secondary">
-          <PhFunnel />
+          <RiFilterLine />
           <span>Filters</span>
         </Button>
 
         <Button>
-          <PhPlus />
+          <RiAddLine />
           <span> Create task </span>
         </Button>
       </div>

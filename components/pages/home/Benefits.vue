@@ -2,38 +2,38 @@
 
 import SectionTitle from "~/components/pages/home/SectionTitle.vue";
 import BenefitCard from "~/components/pages/home/BenefitCard.vue";
-import { PhChartBar, PhDatabase, PhGauge, PhIntersect, PhLayout, PhSparkle} from "@phosphor-icons/vue";
+import { RiBarChartFill, RiDatabase2Fill, RiSpeedFill, RiLinksFill, RiLayoutFill, RiSparklingFill } from '@remixicon/vue';
 
 const items = [
   {
     title: "Automated Reports",
     description: "Generate reports effortlessly and stay informed with ease.",
-    icon: PhChartBar,
+    icon: RiBarChartFill,
   },
   {
     title: "Seamless Integration",
     description: "Effortlessly connect Cycles with your existing tools for a unified workflow.",
-    icon: PhIntersect,
+    icon: RiLinksFill,
   },
   {
     title: "Boost Productivity",
     description: "Automate routine tasks to save time and enhance your team's efficiency.",
-    icon: PhGauge,
+    icon: RiSpeedFill,
   },
   {
     title: "24/7 AI Support",
     description: "Get round-the-clock assistance with Cycles AI, always ready to help.",
-    icon: PhSparkle,
+    icon: RiSparklingFill,
   },
   {
     title: "Data Security & Compliance",
     description: "Protect your business with advanced encryption and compliance standards.",
-    icon: PhDatabase,
+    icon: RiDatabase2Fill,
   },
   {
     title: "Intuitive User Experience",
     description: "Start using Cycles quickly with a user-friendly, straightforward interface.",
-    icon: PhLayout,
+    icon: RiLayoutFill,
   },
 ];
 </script>

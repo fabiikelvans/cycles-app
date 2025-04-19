@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {PhArrowDown, PhArrowUp, PhDotsThreeVertical} from "@phosphor-icons/vue";
+import {RiArrowDownLine, RiArrowUpLine, RiMore2Line} from "@remixicon/vue";
 import { BarChart,  Orientation } from 'vue-chrts'
 import MonitoringBar from "~/components/pages/analytics/MonitoringBar.vue";
 
@@ -58,7 +58,7 @@ const yFormatter = (i: number): string => `${RevenueData[i]?.month}`
           class="bg-neutral-50 text-neutral-800 rounded-full hover:cursor-pointer hover:text-white hover:bg-neutral-800"
         >
           <span class="font-light">Transfer</span>
-          <PhArrowUp />
+          <RiArrowUpLine />
         </Button>
 
         <Button
@@ -66,11 +66,11 @@ const yFormatter = (i: number): string => `${RevenueData[i]?.month}`
           class="bg-neutral-50 text-neutral-800 rounded-full hover:cursor-pointer hover:text-white hover:bg-neutral-800"
         >
           <span class="font-light"> Request </span>
-          <PhArrowDown />
+          <RiArrowDownLine />
         </Button>
 
          <div class="flex items-center justify-center p-2 border rounded-full border-neutral-700 hover:cursor-pointer hover:text-white hover:bg-neutral-800">
-           <PhDotsThreeVertical size="24" />
+           <RiMore2Line size="24" />
          </div>
       </div>
     </div>

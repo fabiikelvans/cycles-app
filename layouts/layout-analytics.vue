@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 import type { NavLink } from '~/types'
 import IconWrapper from '~/components/layouts/analytics/IconWrapper.vue'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { PhEnvelopeSimple, PhMagnifyingGlass, PhList, PhX } from '@phosphor-icons/vue'
+import { RiMailFill, RiSearchLine, RiMenuFill, RiCloseFill } from '@remixicon/vue'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -81,7 +81,7 @@ watch(isOpen, (value) => {
          <div class="md:hidden flex items-center space-x-2">
            <button @click="isOpen = !isOpen">
              <IconWrapper>
-               <component :is="isOpen ? PhX : PhList" size="28" />
+               <component :is="isOpen ? RiCloseFill : RiMenuFill" size="28" />
              </IconWrapper>
            </button>
          </div>
@@ -89,10 +89,10 @@ watch(isOpen, (value) => {
          <!-- Right Icons (always visible) -->
          <div class="hidden md:flex items-center space-x-2">
            <IconWrapper>
-             <PhMagnifyingGlass size="24" weight="light" />
+             <RiSearchLine size="24" weight="light" />
            </IconWrapper>
            <IconWrapper>
-             <PhEnvelopeSimple size="24" weight="light" />
+             <RiMailFill size="24" weight="light" />
            </IconWrapper>
 
            <DropdownMenu>

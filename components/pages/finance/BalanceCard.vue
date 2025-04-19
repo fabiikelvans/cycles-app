@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { PhDotsThreeOutline} from "@phosphor-icons/vue";
+import { RiMore2Line } from "@remixicon/vue";
 import { Progress } from '@/components/ui/progress'
 import { ref, watchEffect } from 'vue'
 
@@ -20,7 +20,7 @@ watchEffect((cleanupFn) => {
    </h2>
 
     <div class="flex items-center justify-center bg-white/20 backdrop-blur-xs border border-gray-400  p-2 rounded-full">
-      <PhDotsThreeOutline size="16" weight="fill" />
+      <RiMore2Line size="16" weight="fill" />
     </div>
   </div>
 

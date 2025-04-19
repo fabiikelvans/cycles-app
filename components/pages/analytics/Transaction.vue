@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import {Card} from "~/components/ui/card";
-import {PhMagnifyingGlass, PhReceipt} from "@phosphor-icons/vue";
+import {RiSearchLine, RiReceiptLine} from "@remixicon/vue";
 import TransactionTable from "~/components/pages/analytics/TransactionTable.vue";
 </script>
 
@@ -10,12 +10,12 @@ import TransactionTable from "~/components/pages/analytics/TransactionTable.vue"
   <div>
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <PhReceipt size="20" />
+        <RiReceiptLine size="20" />
         <h4> Recent Transactions </h4>
       </div>
 
       <div class="flex items-center justify-center p-3 bg-neutral-800 rounded-full">
-        <PhMagnifyingGlass />
+        <RiSearchLine />
       </div>
     </div>
 
