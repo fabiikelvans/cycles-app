@@ -8,10 +8,10 @@ const dropdownRef = ref<HTMLElement | null>(null)
 const route = useRoute()
 
 const navLinks = [
-  { name: 'Home', href: '#' },
-  { name: 'Features', href: '/features' },
-  { name: 'Pricing', href: '/pricing' },
-  { name: 'Contact', href: '/contact' }
+  { name: 'Home', href: '/' },
+  { name: 'Features', href: '#' },
+  { name: 'Pricing', href: '#' },
+  { name: 'Contact', href: '#' }
 ]
 
 watch(isOpen, (value) => {

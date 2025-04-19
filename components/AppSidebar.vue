@@ -117,12 +117,14 @@ const data = {
   <Sidebar v-bind="props" class="side-bg">
     <SidebarHeader>
       <!-- Logo -->
+      <NuxtLink to="/">
       <div class="flex items-center space-x-1 mx-2">
         <div class="relative h-10 w-10">
           <img src="~/assets/images/logos/logo-1.svg" alt="Cycles logo">
         </div>
         <span class="text-lg font-semibold font-mono">Cycles</span>
       </div>
+      </NuxtLink>
     </SidebarHeader>
     <SidebarContent>
       <SidebarGroup v-for="item in data.navMain" :key="item.title">

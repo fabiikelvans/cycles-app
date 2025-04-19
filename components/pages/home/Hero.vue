@@ -29,7 +29,9 @@ const gradientStyle = `
       </p>
 
       <div>
+        <NuxtLink to="/dashboard/analytics">
           <RainbowButton> Try Cycle for Free </RainbowButton>
+        </NuxtLink>
       </div>
     </div>
 

@@ -37,9 +37,11 @@ watch(isOpen, (value) => {
        <nav class="flex justify-between items-center relative">
 
          <!-- Logo -->
+         <NuxtLink to="/">
          <div class="flex items-center py-2 px-4 border border-gray-800/60 rounded-full">
            <span class="text-xl font-light font-mono">Cycles</span>
          </div>
+         </NuxtLink>
 
          <div class="flex items-center space-x-2">
            <!-- Desktop Nav Links -->

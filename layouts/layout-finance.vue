@@ -52,12 +52,14 @@ watch(isOpen, (value) => {
        <nav class="flex justify-between items-center relative">
 
          <!-- Logo -->
+         <NuxtLink to="/">
          <div class="flex items-center space-x-3">
            <div class="relative h-10 w-10">
              <img src="~/assets/images/logos/black-logo.svg" alt="Cycles logo">
            </div>
            <span class="text-2xl font-semibold font-mono">Cycles</span>
          </div>
+         </NuxtLink>
 
          <!-- Desktop Nav Links -->
          <div class="hidden md:block">
