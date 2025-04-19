@@ -10,6 +10,9 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  phosphor: {
+    expose: true,
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
