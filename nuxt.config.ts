@@ -11,8 +11,7 @@ export default defineNuxtConfig({
     ],
     resolve: {
       alias: {
-        '@phosphor-icons/vue/dist/icons/PhGift.vue.mjs': '',
-        '@phosphor-icons/vue/dist/icons/PhGif.vue.mjs': '',
+        '@phosphor-icons/vue/dist/icons': '',
       }
     }
   },
