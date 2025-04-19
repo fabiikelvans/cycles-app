@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import {Card} from "~/components/ui/card";
-import {PhChartLineUp, PhDotsThreeVertical} from "@phosphor-icons/vue";
+import { RiLineChartLine, RiMoreLine } from "@remixicon/vue";
 import BudgetGraph from "~/components/pages/analytics/BudgetGraph.vue";
 </script>
 
@@ -10,12 +10,12 @@ import BudgetGraph from "~/components/pages/analytics/BudgetGraph.vue";
   <div>
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <PhChartLineUp size="20" />
+        <RiLineChartLine size="20" />
         <h4> Analytics </h4>
       </div>
 
       <div class="flex items-center justify-center p-3 bg-neutral-800 rounded-full">
-        <PhDotsThreeVertical />
+        <RiMoreLine />
       </div>
     </div>
 
