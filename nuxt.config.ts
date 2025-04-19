@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     ],
   },
   phosphor: {
-    expose: false,
+    expose: true,
   },
   shadcn: {
     /**
@@ -33,7 +33,8 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     'shadcn-nuxt',
-    "nuxt-phosphor-icons"
+    "nuxt-phosphor-icons",
+    "@nuxt/icon",
   ],
   plugins: [{ src: "~/plugins/apexcharts.ts", mode: "client" }],
   app: {
