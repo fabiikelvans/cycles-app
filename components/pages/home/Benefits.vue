@@ -2,7 +2,7 @@
 
 import SectionTitle from "~/components/pages/home/SectionTitle.vue";
 import BenefitCard from "~/components/pages/home/BenefitCard.vue";
-import { PhChartBar, PhDatabase, PhGauge, PhIntersect, PhLayout, PhSparkle } from "@phosphor-icons/vue";
+import { PhChartBar, PhDatabase, PhGauge, PhIntersect, PhLayout, PhSparkle} from "@phosphor-icons/vue";
 
 const items = [
   {
