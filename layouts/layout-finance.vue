@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 import type { NavLink } from '~/types'
 import IconWrapper from '~/components/layouts/analytics/IconWrapper.vue'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { PhList, PhX, PhGearSix, PhBellRinging } from '@phosphor-icons/vue'
+import { RiMenuFill, RiCloseFill, RiSettings4Fill, RiNotification3Fill } from '@remixicon/vue'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -87,7 +87,7 @@ watch(isOpen, (value) => {
          <div class="md:hidden flex items-center space-x-2">
            <button @click="isOpen = !isOpen">
              <IconWrapper>
-               <component :is="isOpen ? PhX : PhList" size="28" />
+               <component :is="isOpen ? RiCloseFill : RiMenuFill" size="28" />
              </IconWrapper>
            </button>
          </div>
@@ -96,10 +96,10 @@ watch(isOpen, (value) => {
          <div class="hidden md:flex items-center space-x-2">
           <div class="flex items-center space-x-2 p-1.5 border-2 border-white bg-gray-200 rounded-full">
             <div class="flex items-center justify-center p-3 transition-colors duration-200 rounded-full  bg-white  hover:cursor-pointer hover:bg-gray-100 hover:text-gray-900">
-            <PhGearSix size="20" weight="light" />
+            <RiSettings4Fill size="20" weight="light" />
             </div>
             <div class="flex items-center justify-center p-3 transition-colors duration-200 rounded-full  bg-white  hover:cursor-pointer hover:bg-gray-100 hover:text-gray-900">
-            <PhBellRinging size="20" weight="light" />
+            <RiNotification3Fill size="20" weight="light" />
             </div>
           </div>
 
