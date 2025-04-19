@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {RiAlarmFill, RiArrowUpRightLine, RiRefreshLine, RiPauseFill, RiPlayFill} from "@remixicon/vue";
+import {RiAlarmFill, RiArrowRightUpLine, RiRefreshLine, RiPauseFill, RiPlayFill} from "@remixicon/vue";
 
 const totalTime = 5 * 60 // Full circle represents 5 minutes
 const timeLeft = ref(2 * 60 + 32) // Starts at 2:32
@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
   <div class="flex items-center justify-between">
     <h2 class="text-lg font-light"> Time tracker </h2>
     <div class="p-3 flex items-center justify-center rounded-full bg-white">
-      <RiArrowUpRightLine size="18" />
+      <RiArrowRightUpLine size="18" />
     </div>
   </div>
 
