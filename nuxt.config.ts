@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    resolve: {
+      alias: {
+        '@phosphor-icons/vue/dist/icons/PhGift.vue.mjs': '',
+      }
+    }
   },
   shadcn: {
     /**
