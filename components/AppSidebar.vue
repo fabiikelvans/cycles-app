@@ -15,14 +15,18 @@ import {
 } from '@/components/ui/sidebar';
 
 import {
-  PhCalendar,
-  PhChartBar,
-  PhCheckCircle, PhGearSix, PhHeadset,
-  PhLightning,
-  PhNote,
-  PhSquaresFour,
-  PhTrayArrowDown, PhUserCircleCheck, PhUsers
-} from "@phosphor-icons/vue";
+  RiCalendarLine,
+  RiBarChartLine,
+  RiCheckboxCircleLine,
+  RiSettings4Line,
+  RiCustomerService2Line,
+  RiFlashlightLine,
+  RiStickyNoteLine,
+  RiLayoutGridLine,
+  RiDownloadLine,
+  RiUserStarLine,
+  RiTeamLine
+} from "@remixicon/vue";
 
 const props = defineProps<SidebarProps>()
 
@@ -33,13 +37,13 @@ const data = {
         {
           title: 'Tasks',
           url: '#',
-          icon: PhCheckCircle,
+          icon: RiCheckboxCircleLine,
           isActive: true,
         },
         {
           title: 'Activities',
           url: '#',
-          icon: PhLightning
+          icon: RiFlashlightLine
         },
       ],
     },
@@ -50,27 +54,27 @@ const data = {
         {
           title: 'Dashboard',
           url: '#',
-          icon: PhSquaresFour
+          icon: RiLayoutGridLine
         },
         {
           title: 'Schedule',
           url: '#',
-          icon: PhCalendar,
+          icon: RiCalendarLine,
         },
         {
           title: 'Note',
           url: '#',
-          icon: PhNote
+          icon: RiStickyNoteLine
         },
         {
           title: 'Products',
           url: '#',
-          icon: PhTrayArrowDown
+          icon: RiDownloadLine
         },
         {
           title: 'Report',
           url: '#',
-          icon: PhChartBar
+          icon: RiBarChartLine
         },
 
       ],
@@ -82,12 +86,12 @@ const data = {
         {
           title: 'Team',
           url: '#',
-          icon: PhUsers
+          icon: RiTeamLine
         },
         {
           title: 'Clients',
           url: '#',
-          icon:PhUserCircleCheck
+          icon: RiUserStarLine
         },
       ],
     },
@@ -96,12 +100,12 @@ const data = {
         {
           title: 'Settings',
           url: '#',
-          icon: PhGearSix
+          icon: RiSettings4Line
         },
         {
           title: 'Support',
           url: '#',
-          icon: PhHeadset
+          icon: RiCustomerService2Line
         },
       ],
     },
