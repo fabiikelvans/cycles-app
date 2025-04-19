@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         '@phosphor-icons/vue/dist/icons/PhGift.vue.mjs': '',
         '@phosphor-icons/vue/dist/icons/PhGif.vue.mjs': '',
         '@phosphor-icons/vue/dist/icons/PhPaintBrush.vue.mjs': '',
-
+        '@phosphor-icons/vue/dist/icons': '',
       }
     }
   },
