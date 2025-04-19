@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     ],
   },
   phosphor: {
-    expose: true,
+    expose: false,
   },
   shadcn: {
     /**
